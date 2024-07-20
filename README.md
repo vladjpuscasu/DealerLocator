@@ -1,6 +1,5 @@
-Type of API JSON data the module handles:
+JSON API data the module handles:
 
-FOR DISTRIBUTORS:
 
 "status": "Text",
 "statusCode": "109",
@@ -30,11 +29,5 @@ FOR DISTRIBUTORS:
 "is3Visible": true,
 "is4Visible": true
 }
-
-FOR DEALERS:
-
-Same as above but with google maps api url:
-
-https://ddp.VPuscasu.com/geo?key=' . $siteApiKey . '&address=' . $search;
 
 $siteApiKey is entered in admin, as is Google maps api key
