@@ -1,0 +1,151 @@
+.distributors-toggle::before {
+	content: "+ ";
+}
+
+/* Spinner overlay */
+.dealer-locator-search-spinner {
+	background-color: rgba(255, 255, 255, 0.7);
+	/*dim the background*/
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 10;
+}
+
+.dealer-locator-search-spinner img {
+	position: absolute;
+	top: calc(50vh - 64px);
+	left: calc(50vw - 64px);
+	width: 128px;
+}
+
+.dealer-locator-wrapper {
+	padding: 100px 20px;
+}
+
+/* Wrappers and search "form" */
+.dealer-locator-wrapper .dealer-locator-subheader {
+	text-align: center;
+	width: 70%;
+	margin: 0px auto 50px;
+}
+	
+.dealer-locator-wrapper .dealer-locator-controls-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	width: 100%;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dealer-locator-wrapper .dealer-locator-controls-wrapper label {
+	display: block;
+	flex: 0 0 100%;
+	font-size: 1.6rem;
+}
+
+.dealer-locator-wrapper .dealer-locator-controls-wrapper .dealer-locator-search-input {
+	border-color: #767676;
+	font-size: 1.8rem;
+	flex: 1 0 50%;
+	height: auto;
+}
+
+.dealer-locator-wrapper .dealer-locator-controls-wrapper .dealer-locator-search-btn {
+	flex: 0 0 auto;
+}
+
+.dealer-locator-search-message-wrapper {
+	min-height: 4rem;
+}
+
+.dealer-locator-search-message {
+	color: #0098da;
+	padding: 1rem 0;
+	text-align: center;
+	width: 100%;
+}
+
+/* Map */
+.dealer-locator-map-wrapper {
+	display: none;
+	height: 500px;
+	width: 100%;
+}
+
+#dealer-locator-map {
+	height: 100%;
+	margin-top: 2rem;
+}
+
+/* Results */
+.dealer-locator-wrapper .dealer-locator-search-results {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.dealer-locator-search-results-wrapper .dealer-locator-search-results,
+.distributor-list {
+	border-bottom: 2px solid gray;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+}
+
+.dealer-locator-wrapper .dealer-locator-search-results h2 {
+	width: 100%;
+	margin-top: 40px;
+}
+
+.dealer-locator-wrapper .dealer-locator-search-results .dealer-locator-search-result {
+	padding: 20px 10px;
+	width: 25%;
+}
+
+@media screen and (max-width: 1100px) {
+	.dealer-locator-wrapper .dealer-locator-search-results .dealer-locator-search-result {
+		width: 33.3%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.dealer-locator-wrapper .dealer-locator-search-results .dealer-locator-search-result {
+		width: 50%;
+	}
+
+	.dealer-locator-wrapper .dealer-locator-subheader {
+		text-align: center;
+		width: 65%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.dealer-locator-wrapper .dealer-locator-search-input,
+	.dealer-locator-wrapper .dealer-locator-search-btn {
+		display: inline-block;
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	.dealer-locator-wrapper .dealer-locator-search-results .dealer-locator-search-result {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.dealer-locator-wrapper .dealer-locator-controls-wrapper label {
+		font-size: 1.8rem;
+	}
+	.dealer-locator-wrapper .dealer-locator-controls-wrapper .dealer-locator-search-input {
+		font-size: 2.2rem;
+	}
+}

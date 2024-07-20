@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+   
+    <!--<type name="\VPuscasu\DealerLocator\Block\DealerLocator">
+        <arguments>
+         <argument name="ajaxUrl" xsi:type="string">/VPuscasudealerlocator/dealerlocator/execute</argument>
+            <argument name="context" xsi:type="object">\Magento\Framework\View\Element\Template\Context</argument>
+            <argument name="request" xsi:type="object">\Magento\Framework\App\Request\Http</argument>
+            <argument name="resultJsonFactory" xsi:type="object">\Magento\Framework\Controller\Result\JsonFactory</argument>
+            <argument name="curl" xsi:type="object">\Magento\Framework\HTTP\Client\Curl</argument>
+            <argument name="formKey" xsi:type="object">\Magento\Framework\Data\Form\FormKey</argument>
+        </arguments>
+        <arguments>
+            <argument name="urlBuilder" xsi:type="object">Magento\Framework\UrlInterface</argument>
+            <argument name="formKey" xsi:type="object">Magento\Framework\Data\Form\FormKey</argument>
+        </arguments>
+    </type>-->
+    <type name="VPuscasu\DealerLocator\Controller\Ajax\Index">
+        <arguments>
+            <argument name="resultJsonFactory" xsi:type="object">Magento\Framework\Controller\Result\JsonFactory</argument>
+        </arguments>
+    </type>
+</config>

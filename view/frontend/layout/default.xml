@@ -1,0 +1,9 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+<head>
+    <!--<script src="VPuscasu_DealerLocator::js/dealer_locator.js"></script>-->
+    <css src="VPuscasu_DealerLocator::css/dealer_locator.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+</page>

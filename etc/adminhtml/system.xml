@@ -1,0 +1,22 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="VPuscasu" translate="label" sortOrder="10">
+            <label>VPuscasu</label>
+        </tab>
+        <section id="VPuscasu_dealerlocator" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Dealer Locator Settings</label>
+            <tab>VPuscasu</tab>
+            <resource>VPuscasu_DealerLocator::config_dealerlocator</resource>
+            <group id="api" translate="label" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>API Settings</label>
+                <field id="google_maps_api_key" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Google Maps API Key</label>
+                </field>
+                <field id="site_api_key" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Site API Key</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
